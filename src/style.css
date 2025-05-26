@@ -1,0 +1,178 @@
+:root {
+  --bs-primary: #0078d4;
+  --bs-secondary: #505050;
+  --bs-success: #10b981;
+  --bs-body-bg: #f5f5f5;
+  --bs-body-color: #333;
+  --bs-border-color: #e5e5e5;
+  --app-header-color: #323130;
+  --app-subheader-color: #605e5c;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  min-height: 100vh;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--app-header-color);
+  margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+  font-size: 1rem;
+  color: var(--app-subheader-color);
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.btn-outline-primary {
+  color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.app-status {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 1rem;
+}
+
+.app-status-active {
+  background-color: #ecfdf5;
+  color: #059669;
+}
+
+.app-card {
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.actions-button {
+  border: none;
+  background: transparent;
+  padding: 0.25rem;
+  cursor: pointer;
+  color: var(--bs-secondary);
+}
+
+.actions-button:hover {
+  color: var(--bs-primary);
+}
+
+.pagination-info {
+  color: var(--bs-secondary);
+  font-size: 0.875rem;
+}
+
+.pagination-arrow {
+  border: none;
+  background: transparent;
+  color: var(--bs-secondary);
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+.pagination-arrow:hover:not(:disabled) {
+  color: var(--bs-primary);
+}
+
+.pagination-arrow:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.microsoft-logo {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.75rem;
+}
+
+.app-name {
+  font-weight: 500;
+}
+
+.app-publisher {
+  font-size: 0.875rem;
+  color: var(--bs-secondary);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid var(--bs-border-color);
+  margin-bottom: 1.5rem;
+}
+
+.nav-tabs .nav-link {
+  color: var(--bs-secondary);
+  border: none;
+  padding: 0.75rem 1rem;
+  margin-right: 1.5rem;
+  font-size: 0.875rem;
+  position: relative;
+}
+
+.nav-tabs .nav-link:hover {
+  color: var(--bs-primary);
+  border: none;
+  background: none;
+}
+
+.nav-tabs .nav-link.active {
+  color: var(--bs-primary);
+  font-weight: 500;
+  border: none;
+  background: none;
+}
+
+.nav-tabs .nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--bs-primary);
+}
+
+/* Transition animations */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 1.75rem;
+  }
+  
+  .page-subtitle {
+    font-size: 0.875rem;
+  }
+}
